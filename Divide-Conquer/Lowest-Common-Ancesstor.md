@@ -1,0 +1,123 @@
+## Lowest Common Ancesstor
+
+----
+## 题目地址
+
+[https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+[http://www.lintcode.com/problem/lowest-common-ancestor/](http://www.lintcode.com/problem/lowest-common-ancestor/)
+
+[http://www.jiuzhang.com/solutions/lowest-common-ancestor/](http://www.jiuzhang.com/solutions/lowest-common-ancestor/)
+
+## 题目描述
+
+```text
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
+
+Given the following binary tree:  root = [3,5,1,6,2,0,8,null,null,7,4]
+
+Example 1:
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+Output: 3
+Explanation: The LCA of nodes 5 and 1 is 3.
+Example 2:
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+Output: 5
+Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+
+
+Note:
+
+All of the nodes' values will be unique.
+p and q are different and both values will exist in the binary tree
+```
+
+## 代码
+
+Approach 1: Divide & Conquer
+
+```java
+public class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode node1, TreeNode node2) {
+    if (root == null || root == node1 || root == node2) return root;
+
+    // Divide
+    TreeNode left = lowestCommonAncestor(root.left, node1, node2);
+    TreeNode right = lowestCommonAncestor(root.right, node1, node2);
+
+    // Conquer
+    if (left != null && right != null) {
+      return root;
+    }
+    if (left != null) {
+      return left;
+    }
+    if (right != null) {
+      return right;
+    }
+
+    return null;
+  }
+
+}
+```
+
+Approach \#2 Itervative using parent points
+
+**Complexity Analysis**
+
+* Time Complexity : O\(N\), where N is the number of nodes in the binary tree. In the worst case we might be visiting all the nodes of the binary tree.
+* Space Complexity : O\(N\). In the worst case space utilized by the stack, the parent pointer dictionary and the ancestor set, would be N each, since the height of a skewed binary tree could be N.
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+      Deque<TreeNode> stack = new ArrayDeque<>();
+      Map<TreeNode, TreeNode> parent = new HashMap<>();
+
+      parent.put(root, null);
+      stack.push(root);
+
+      while (!parent.containsKey(p) || !parent.containsKey(q)) {
+        TreeNode node = stack.pop();
+        if (node.left != null) {
+          parent.put(node.left, node);
+          stack.push(node.left);
+        }
+        if (node.right != null) {
+          parent.put(node.right, node);
+          stack.push(node.right);
+        }
+      }
+
+      // Ancestros set() for node p
+      Set<TreeNode> ancestors = new HashSet<>();
+      // Process all ancestors for node p using parent pointers
+      while (p != null) {
+        ancestrs.add(p);
+        p = parent.get(p);
+      }
+
+      // the first ancestor of q which appears in p's ancestor
+      while (!ancestors.contains(q)) {
+        q = parent.get(q);
+      }
+
+      return q;
+    }
+}
+```
+

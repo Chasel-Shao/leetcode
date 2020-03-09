@@ -1,0 +1,70 @@
+## Remove Node In A Binary Search Tree
+
+----
+## 题目地址
+
+[http://www.lintcode.com/problem/remove-node-in-binary-search-tree/](http://www.lintcode.com/problem/remove-node-in-binary-search-tree/)
+
+[https://www.jiuzhang.com/solution/remove-node-in-binary-search-tree/](https://www.jiuzhang.com/solution/remove-node-in-binary-search-tree/)
+
+[http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/BST-delete.html](http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/BST-delete.html)
+
+[http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/BST-delete2.html](http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/BST-delete2.html)
+
+## 题目描述
+
+```text
+Given a root of Binary Search Tree with unique value for each node. Remove the node with given value. If there is no such a node with given value in the binary search tree, do nothing. You should keep the tree still a binary search tree after removal.
+```
+
+## 代码
+
+Approach 1: Recursion
+
+```java
+public class Solution {
+    public int successor(TreeNode root) {
+    root = root.right;
+    while (root.left != null) root = root.left;
+    return root.val;
+  }
+
+  public int predecessor(TreeNode root) {
+    root = root.left;
+    while (root.right != null) root = root.right;
+    return root.val;
+  }
+
+  public TreeNode deleteNote(TreeNode root, int key) {
+    if (root == null) return null;
+
+    // delete from the right subtree
+    if (key > root.val) {
+      root.right = deleteNode(root.right, key);
+    } else if (ke < root.val) {
+      root.left = deleteNode(root.left, key);
+    } else {
+
+      if (root.left == null && root.right == null) {
+        // the node is a leaf
+        root = null;
+      } else if (root.right != null){
+        // the node is not a leaf and has a right child
+        root.val = successor(root);
+        root.right = deleteNode(root.right, root.val);
+      } else {
+        // the node is not a leaf, has no right child, and has left child
+        root.val = predecessor(root);
+        root.left = deleteNode(root.left, root.val);
+      }
+    }
+
+    return root;
+  }
+}
+```
+
+Time complexity : $$O(logN)$$
+
+Space complexity : $$O(logN)$$
+
