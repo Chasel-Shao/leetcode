@@ -1,43 +1,45 @@
-# Data Structure
+## Data Structure
 
-## Min Heap
+### Min Heap
 
 ```java
 PriorityQueue<Integer> q =  new PriorityQueue<Integer>();
 ```
 
-## Max Heap
+### Max Heap
 
 ```java
 PriorityQueue<Integer> q =  new PriorityQueue<Integer>(Collections.reverseOrder());
 ```
 
-## Stack
+### Stack
 
 ```java
 Deque<TreeNode> stack = new ArrayDeque<>();
 ```
 
-## Comparator
+### Comparator
 
 ```java
 
 ```
 
-## Arrays.fill
+### Arrays
 
 ```java
 int[] candies = new int[ratings.length];
 Arrays.fill(candies, 1);
+Arrays.copyOfRange()
+Collections.reverse(wordList);
 ```
 
-## TreeMap
+### TreeMap
 
 ```java
 
 ```
 
-## TreeSet
+### TreeSet
 
 ```java
 
@@ -60,5 +62,11 @@ BitSet hasCycle = new BitSet(1);
 ```java
 import javafx.util.Pair;
 
+```
+
+### String
+
+```java
+new StringBuffer(word).reverse().toString()
 ```
 

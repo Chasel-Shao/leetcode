@@ -29,6 +29,27 @@
 - **取模**： 位运算比加减乘除更加高效。 所以在一些底层的组件例如jdk， redis 中经常用位运算，比如用<< ，>>代替乘除， 用& 代替取模操作。
 - **状态压缩和位图**： 位运算可以用压缩存储和表示信息。 每个二进制位有0|1 两种状态， 那一个int32 可以表示出 32种状态。 比如linux中的文件状态中的read ，write， 和执行权限就可以用三个二进制位表示， 7（111）表示有Read的权限，有Write的权限和执行的权限。
 
+
+```java
+String intToString(int x) {
+		char[] bytes = new char[4];
+		for(int i = 3; i > -1; --i) {
+			bytes[3 - i] = (char) (x >> (i * 8) & 0xff);
+		}
+		return new String(bytes);
+	}
+  // Decodes bytes string to integer
+int stringToInt(String bytesStr) {
+    int result = 0;
+    for(char b : bytesStr.toCharArray()) {
+      result = (result << 8) + (int)b;
+    }
+    return result;
+  }
+```
+
+
+
 ## 三、 例题
 
 **1、** **不使用中间变量交换两数**

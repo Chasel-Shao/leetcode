@@ -32,13 +32,12 @@ Approach 1:
 
 ```java
 class Solution {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        ListNode current = head;
-        ListNode next = null;
+  public ListNode reverseKGroup(ListNode head, int k) {
+    ListNode current = head;
+    ListNode next = null;
     ListNode prev = null;
 
     int count = 0;
-
     while (count < k && current != null) {
       next = current.next;
       current.next = prev;
@@ -47,13 +46,55 @@ class Solution {
       count++;
     }
 
-
     if (next != null) {
       head.next = reverseKGroup(next, k);
     }
 
     return prev;
-        }
+ }
+}
+```
+
+Approach #2
+
+```java
+public class Solution {
+
+  public ListNode reverseKGroup(ListNode head, int k) {
+    if (head == null || k <= 1) return head;
+
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+
+    head = dummy;
+    while (head.next != null) {
+      head = reverseNextK(head, k);
+    }
+
+    return dummy.next;
+  }
+
+  private ListNode reverseNextK(ListNode head, int k) {
+    ListNode next = head;
+    for (int i = 0; i < k; i++) {
+      if (next.next == null) return next;
+
+      next = next.next;
+    }
+
+    ListNode n1 = head.next;
+    ListNode prev = head, curt = n1;
+    for (int i = 0; i < k; i++) {
+      ListNode next = curt.next;
+      curt.next = prev;
+      prev = curt;
+      curt = next;
+    }
+
+    n1.next = curt;
+    head.next = prev;
+    return n1;
+  }
 }
 ```
 

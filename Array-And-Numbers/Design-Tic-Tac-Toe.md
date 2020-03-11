@@ -64,7 +64,7 @@ Approach 1:
 
 ```java
 class TicTacToe {
-    private int[] rows;
+  private int[] rows;
   private int[] cols;
   private int diagonal;
   private int antiDiagonal;
