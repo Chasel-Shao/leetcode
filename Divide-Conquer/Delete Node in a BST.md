@@ -3,6 +3,8 @@
 ----
 ## 题目地址
 
+https://leetcode.com/problems/delete-node-in-a-bst/
+
 [http://www.lintcode.com/problem/remove-node-in-binary-search-tree/](http://www.lintcode.com/problem/remove-node-in-binary-search-tree/)
 
 [https://www.jiuzhang.com/solution/remove-node-in-binary-search-tree/](https://www.jiuzhang.com/solution/remove-node-in-binary-search-tree/)
@@ -23,7 +25,7 @@ Approach 1: Recursion
 
 ```java
 public class Solution {
-    public int successor(TreeNode root) {
+  public int successor(TreeNode root) {
     root = root.right;
     while (root.left != null) root = root.left;
     return root.val;
