@@ -11,6 +11,18 @@ private Comparator<ListNode> ListNodeComparator = new Comparator<ListNode>() {
 	}
 };
 Queue<ListNode> heap = new PriorityQueue<ListNode>(lists.size(), ListNodeComparator);
+
+private Queue<Long> small = new PriorityQueue(Collections.reverseOrder()),
+private Queue<Long> large = new PriorityQueue();
+
+
+PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(1, new Comparator<Integer>(){
+  @Override
+  public int compare(Integer x, Integer y) {
+    return y - x;
+  }
+});
 ```
 
 ### Min Heap
@@ -128,6 +140,12 @@ String newstr = str.replace("a", "A");// newstr的值为Address
 # str.toUpperCase();
 # str.split(String sign);
 # str.split(String sign, in limit)；
+
+
+public int indexOf(int char)
+public int indexOf(int char, int fromIndex)
+public int lastIndexOf(int ch)
+public int lastIndexOf(int ch, int before)
 ```
 
 ### Character
@@ -162,5 +180,22 @@ class Solution {
     return (pattenIPv6.matcher(IP).matches()) ? "IPv6" : "Neither";
   }
 }
+```
+
+### enum
+
+```java
+enum Flag {ROOT, LEFT, RIGHT, MIDDLE};
+Flag flag;
+flag == Flag.ROOT;
+```
+
+### LinkedHashSet
+
+```java
+HashMap<Integer, Set<Integer>> idx = new HashMap<Integer, Set<Integer>>();
+idx.get(val).add(lst.size());
+int remove_idx = idx.get(val).iterator().next();
+idx.get(val).remove(remove_idx);
 ```
 
