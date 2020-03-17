@@ -3,7 +3,6 @@
 记录数据结构与算法/LeetCode练习过程，将持续更新
 
 - [Array And Numbers](Array-And-Numbers/README.md)
-
   - Best Time To Buy And Sell Stock
     * [121.Best-Time-to-Buy-and-Sell-Stock](Array-And-Numbers/Best-Time-To-Buy-And-Sell-Stock/121.Best-Time-to-Buy-and-Sell-Stock.md)
     * [122.Best-Time-to-Buy-and-Sell-Stock-II](Array-And-Numbers/Best-Time-To-Buy-And-Sell-Stock/122.Best-Time-to-Buy-and-Sell-Stock-II.md)
@@ -12,7 +11,6 @@
   - Spiral Matrix
     * [54.Spiral-Matrix](Array-And-Numbers/Spiral-Matrix/54.Spiral-Matrix.md)
     * [59.Spiral-Matrix-II](Array-And-Numbers/Spiral-Matrix/59.Spiral-Matrix-II.md)
-
   * [1.Two-Sum](Array-And-Numbers/1.Two-Sum.md)
   * [1031.Maximum-Sum-of-Two-Non-Overlapping-Subarrays](Array-And-Numbers/1031.Maximum-Sum-of-Two-Non-Overlapping-Subarrays.md)
   * [1099.Two-Sum-Less-Than-K](Array-And-Numbers/1099.Two-Sum-Less-Than-K.md)
@@ -71,16 +69,12 @@
   * [Prison Cels After N Days](Array-And-Numbers/Prison-Cels-After-N-Days.md)
   * [Subarray Sum Closest](Array-And-Numbers/Subarray-Sum-Closest.md)
   * [Subarray Sum Zero](Array-And-Numbers/Subarray-Sum-Zero.md)
-
 - [Basic Knowledge](Basic-Knowledge/README.md)
-
   * [Bit Operation](Basic-Knowledge/Bit-Operation.md)
   * [Heapify](Basic-Knowledge/Heapify.md)
   * [Java Syntax](Basic-Knowledge/Java-Syntax.md)
   * [Trie Tree](Basic-Knowledge/Trie-Tree.md)
-
 - [Binary Search](Binary-Search/README.md)
-
   * [153.Find-Minimum-in-Rotated-Sorted-Array](Binary-Search/153.Find-Minimum-in-Rotated-Sorted-Array.md)
   * [162.Find-Peak-Element](Binary-Search/162.Find-Peak-Element.md)
   * [278.First-Bad-Version](Binary-Search/278.First-Bad-Version.md)
@@ -95,9 +89,7 @@
   * [Search For A Range](Binary-Search/Search-For-A-Range.md)
   * [Search In A Big Sorted Array](Binary-Search/Search-In-A-Big-Sorted-Array.md)
   * [Sqrt X](Binary-Search/Sqrt-X.md)
-
 - [Binary Tree](Binary-Tree/README.md)
-
   * [1038.Binary-Search-Tree-to-Greater-Sum-Tree](Binary-Tree/1038.Binary-Search-Tree-to-Greater-Sum-Tree.md)
   * [105.Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal](Binary-Tree/105.Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
   * [1145.Binary-Tree-Coloring-Game](Binary-Tree/1145.Binary-Tree-Coloring-Game.md)
@@ -110,15 +102,12 @@
   * [543.Diameter-of-Binary-Tree](Binary-Tree/543.Diameter-of-Binary-Tree.md)
   * [662.Maximum-Width-of-Binary-Tree](Binary-Tree/662.Maximum-Width-of-Binary-Tree.md)
   * [863.All-Nodes-Distance-K-in-Binary-Tree](Binary-Tree/863.All-Nodes-Distance-K-in-Binary-Tree.md)
-
 - [Data Structure](Data-Structure/README.md)
-
   - [Basic Calculator](Data-Structure/Basic-Calculator/README.md)
     * [224.Basic-Calculator](Data-Structure/Basic-Calculator/224.Basic-Calculator.md)
     * [227.Basic-Calculator-II](Data-Structure/Basic-Calculator/227.Basic-Calculator-II.md)
     * [772.Basic-Calculator-III](Data-Structure/Basic-Calculator/772.Basic-Calculator-III.md)
     * [Basic Claculator Iv](Data-Structure/Basic-Calculator/Basic-Claculator-Iv.md)
-
   * [1152.Analyze-User-Website-Visit-Pattern](Data-Structure/1152.Analyze-User-Website-Visit-Pattern.md)
   * [1167.Minimum-Cost-to-Connect-Sticks](Data-Structure/1167.Minimum-Cost-to-Connect-Sticks.md)
   * [1172.Dinner-Plate-Stacks](Data-Structure/1172.Dinner-Plate-Stacks.md)
@@ -155,9 +144,7 @@
   * [Max Tree](Data-Structure/Max-Tree.md)
   * [Rehashing](Data-Structure/Rehashing.md)
   * [Subarray Sum Zero](Data-Structure/Subarray-Sum-Zero.md)
-
 - [Divide Conquer](Divide-Conquer/README.md)
-
   * [102.Binary-Tree-Level-Order-Traversal](Divide-Conquer/102.Binary-Tree-Level-Order-Traversal.md)
   * [103.Binary-Tree-Zigzag-Level-Order-Traversal](Divide-Conquer/103.Binary-Tree-Zigzag-Level-Order-Traversal.md)
   * [107.Binary-Tree-Level-Order-Traversal-II](Divide-Conquer/107.Binary-Tree-Level-Order-Traversal-II.md)
@@ -174,14 +161,11 @@
   * [Postorder](Divide-Conquer/Postorder.md)
   * [Preorder](Divide-Conquer/Preorder.md)
   * [Search Range In Binary Search Tree](Divide-Conquer/Search-Range-In-Binary-Search-Tree.md)
-
 - [Dynamic Programming](Dynamic-Programming/README.md)
-
   - [Backpack Problem](Dynamic-Programming/Backpack-Problem/README.md)
     * [Backpack Ii](Dynamic-Programming/Backpack-Problem/Backpack-Ii.md)
     * [Backpack Iii](Dynamic-Programming/Backpack-Problem/Backpack-Iii.md)
     * [Backpack](Dynamic-Programming/Backpack-Problem/Backpack.md)
-
   * [1000.Minimum-Cost-to-Merge-Stones](Dynamic-Programming/1000.Minimum-Cost-to-Merge-Stones.md)
   * [1066.Campus-Bikes-II](Dynamic-Programming/1066.Campus-Bikes-II.md)
   * [115.Distinct-Subsequences](Dynamic-Programming/115.Distinct-Subsequences.md)
@@ -208,13 +192,10 @@
   * [Long Common Sequence](Dynamic-Programming/Long-Common-Sequence.md)
   * [Maximum Subarray Iii](Dynamic-Programming/Maximum-Subarray-Iii.md)
   * [Minimum Adjustment Cost](Dynamic-Programming/Minimum-Adjustment-Cost.md)
-
 - [Graph Search](Graph-Search/README.md)
-
   - Word Ladder
     * [126.Word-Ladder-II](Graph-Search/Word-Ladder/126.Word-Ladder-II.md)
     * [127.Word-Ladder](Graph-Search/Word-Ladder/127.Word-Ladder.md)
-
   * [1102.Path-With-Maximum-Minimum-Value](Graph-Search/1102.Path-With-Maximum-Minimum-Value.md)
   * [1192.Critical-Connections-in-a-Network](Graph-Search/1192.Critical-Connections-in-a-Network.md)
   * [1239.Maximum-Length-of-a-Concatenated-String-with-Unique-Characters](Graph-Search/1239.Maximum-Length-of-a-Concatenated-String-with-Unique-Characters.md)
@@ -240,13 +221,10 @@
   * [93.Restore-IP-Addresses](Graph-Search/93.Restore-IP-Addresses.md)
   * [994.Rotting-Oranges](Graph-Search/994.Rotting-Oranges.md)
   * [Recover Rotated Sorted Array](Graph-Search/Recover-Rotated-Sorted-Array.md)
-
 - [Linked List](Linked-List/README.md)
-
   - Add Two Numbers
     * [2.Add-Two-Numbers](Linked-List/Add-Two-Numbers/2.Add-Two-Numbers.md)
     * [445.Add-Two-Numbers-II](Linked-List/Add-Two-Numbers/445.Add-Two-Numbers-II.md)
-
   * [109.Convert-Sorted-List-to-Binary-Search-Tree](Linked-List/109.Convert-Sorted-List-to-Binary-Search-Tree.md)
   * [138.Copy-List-with-Random-Pointer](Linked-List/138.Copy-List-with-Random-Pointer.md)
   * [142.Linked-List-Cycle-II](Linked-List/142.Linked-List-Cycle-II.md)
@@ -264,43 +242,31 @@
   * [86.Partition-List](Linked-List/86.Partition-List.md)
   * [92.Reverse-Linked-List-II](Linked-List/92.Reverse-Linked-List-II.md)
   * [Remove Duplicates From Unsorted List Geeksforgeeks](Linked-List/Remove-Duplicates-From-Unsorted-List-Geeksforgeeks.md)
-
 - [Other](Other/README.md)
-
   * [1185.Day-of-the-Week](Other/1185.Day-of-the-Week.md)
   * [20.Valid-Parentheses](Other/20.Valid-Parentheses.md)
   * [277.Find-the-Celebrity](Other/277.Find-the-Celebrity.md)
   * [8.String-to-Integer-(atoi)](Other/8.String-to-Integer-(atoi).md)
-
 - [Permutation And Combination](Permutation-And-Combination/README.md)
-
   * [78.Subsets](Permutation-And-Combination/78.Subsets.md)
   * [90.Subsets-II](Permutation-And-Combination/90.Subsets-II.md)
   * [Combination](Permutation-And-Combination/Combination.md)
-
 - Search Bfs Dfs
-
   * [10.Regular-Expression-Matching](Search(bfs:dfs)/10.Regular-Expression-Matching.md)
   * [179.Largest-Number](Search(bfs:dfs)/179.Largest-Number.md)
   * [44.Wildcard-Matching](Search(bfs:dfs)/44.Wildcard-Matching.md)
-
 - [Sort Algorithm](Sort-Algorithm/README.md)
-
   * [Bubble Sort](Sort-Algorithm/Bubble-Sort.md)
   * [Merge Sort](Sort-Algorithm/Merge-Sort.md)
   * [Quick Sort](Sort-Algorithm/Quick-Sort.md)
-
 - Stack
-
+  
   * [636.Exclusive-Time-of-Functions](Stack/636.Exclusive-Time-of-Functions.md)
-
 - [String](String/README.md)
-
   - Serialize And Deserialize
     * [297.Serialize-and-Deserialize-Binary-Tree](String/Serialize-And-Deserialize/297.Serialize-and-Deserialize-Binary-Tree.md)
     * [428.Serialize-and-Deserialize-N-ary-Tree](String/Serialize-And-Deserialize/428.Serialize-and-Deserialize-N-ary-Tree.md)
     * [449.Serialize-and-Deserialize-BST](String/Serialize-And-Deserialize/449.Serialize-and-Deserialize-BST.md)
-
   * [1044.Longest-Duplicate-Substring](String/1044.Longest-Duplicate-Substring.md)
   * [1100.Find-K-Length-Substrings-With-No-Repeated-Characters](String/1100.Find-K-Length-Substrings-With-No-Repeated-Characters.md)
   * [12.Integer-to-Roman](String/12.Integer-to-Roman.md)
@@ -321,24 +287,19 @@
   * [767.Reorganize-String](String/767.Reorganize-String.md)
   * [819.Most-Common-Word](String/819.Most-Common-Word.md)
   * [854.K-Similar-Strings](String/854.K-Similar-Strings.md)
-
 - Toposort
-
   * [207.Course-Schedule](Toposort/207.Course-Schedule.md)
   * [210.Course-Schedule-II](Toposort/210.Course-Schedule-II.md)
   * [269.Alien-Dictionary](Toposort/269.Alien-Dictionary.md)
   * [468.Validate-IP-Address](Toposort/468.Validate-IP-Address.md)
   * [Topological Sorting](Toposort/Topological-Sorting.md)
-
 - Trie Tree
-
   * [1032.Stream-of-Characters](Trie-Tree/1032.Stream-of-Characters.md)
   * [208.Implement-Trie-(Prefix-Tree)](Trie-Tree/208.Implement-Trie-(Prefix-Tree).md)
-
 - Two Pointers
-
   * [1004.Max-Consecutive-Ones-III](Two-Pointers/1004.Max-Consecutive-Ones-III.md)
   * [75.Sort-Colors](Two-Pointers/75.Sort-Colors.md)
   * [76.Minimum-Window-Substring](Two-Pointers/76.Minimum-Window-Substring.md)
   * [88.Merge-Sorted-Array](Two-Pointers/88.Merge-Sorted-Array.md)
-  * [Sort Colors Ii](
+  * [Sort Colors Ii](Two-Pointers/Sort-Colors-Ii.md)
+
