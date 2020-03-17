@@ -19,7 +19,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 ## 代码
 
-Approach 1: Divide Conquer \(Recursive\)
+### Approach 1: Divide Conquer \(Recursive\)
 
 **Intuition** By definition, the maximum depth of a binary tree is the maximum number of steps to reach a leaf node from the root node.
 
@@ -40,7 +40,7 @@ public class Solution {
 }
 ```
 
-Approach 2: Traverse
+### Approach 2: Traverse
 
 ```java
 class Solution {
@@ -66,7 +66,7 @@ class Solution {
 }
 ```
 
-Approach 3: Iteration
+### Approach 3: Iteration
 
 ```java
 class Solution {
