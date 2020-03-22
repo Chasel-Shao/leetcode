@@ -19,15 +19,17 @@ If temporary buffer is not allowed, how to solve it?
 
 ## 代码
 
+### Approach #1 Two loop
+
 ```java
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
     if (head == null) return null;
 
     ListNode curr = head;
-    while(curr != null) {
+    while (curr != null) {
       ListNode inner = curr;
-      while(inner.next != null) {
+      while (inner.next != null) {
         if (inner.next.val == curr.val) {
           inner.next = inner.next.next;
         } else {

@@ -83,6 +83,17 @@ Arrays.fill(candies, 1);
 int[] copy = Arrays.copyOfRange(arr, 2, 6); 
 int[] perm = Arrays.copyOf(nums, nums.length);
 Arrays.sort(chs);
+
+int[][] points = new int[][] {{1,2}};
+int[] p = points[0];
+int x = p[0];
+int y = p[1];
+
+char[] str1 = s.toCharArray();
+char[] str2 = t.toCharArray();
+Arrays.sort(str1);
+Arrays.sort(str2);
+Arrays.equals(str1, str2);
 ```
 
 ### ArrayList
