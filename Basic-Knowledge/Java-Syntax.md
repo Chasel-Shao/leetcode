@@ -95,7 +95,8 @@ Arrays.sort(str1);
 Arrays.sort(str2);
 Arrays.equals(str1, str2);
 
-
+int[] nums;
+int sum  = Arrays.stream(nums).sum();
 
 ```
 
@@ -129,7 +130,27 @@ ArrayList<T> obj = new ArrayList<T>(Collections.nCopies(count,element));
 ### TreeSet
 
 ```java
-
+void add(Object o): This method will add specified element according to some sorting order in TreeSet. Duplicate entires will not get added.
+boolean addAll(Collection c): This method will add all elements of specified Collection to the set. Elements in Collection should be homogeneous otherwise ClassCastException will be thrown. Duplicate Entries of Collection will not be added to TreeSet.
+void clear(): This method will remove all the elements.
+boolean contains(Object o): This method will return true if given element is present in TreeSet else it will return false.
+Object first(): This method will return first element in TreeSet if TreeSet is not null else it will throw NoSuchElementException.
+Object last(): This method will return last element in TreeSet if TreeSet is not null else it will throw NoSuchElementException.
+SortedSet headSet(Object toElement): This method will return elements of TreeSet which are less than the specified element.
+SortedSet tailSet(Object fromElement): This method will return elements of TreeSet which are greater than or equal to the specified element.
+SortedSet subSet(Object fromElement, Object toElement): This method will return elements ranging from fromElement to toElement. fromElement is inclusive and toElement is exclusive.
+boolean isEmpty(): This method is used to return true if this set contains no elements or is empty and false for the opposite case.
+Object clone(): The method is used to return a shallow copy of the set, which is just a simple copied set.
+int size(): This method is used to return the size of the set or the number of elements present in the set.
+boolean remove(Object o): This method is used to return a specific element from the set.
+ceiling​(E e): This method returns the least element in this set greater than or equal to the given element, or null if there is no such element.
+descendingIterator​(): This method returns an iterator over the elements in this set in descending order.
+descendingSet​(): This method returns a reverse order view of the elements contained in this set.
+floor​(E e): This method returns the greatest element in this set less than or equal to the given element, or null if there is no such element.
+higher​(E e): This method returns the least element in this set strictly greater than the given element, or null if there is no such element.
+lower​(E e): This method returns the greatest element in this set strictly less than the given element, or null if there is no such element.
+pollFirst​(): This method retrieves and removes the first (lowest) element, or returns null if this set is empty.
+pollLast​(): This method retrieves and removes the last (highest) element, or returns null if this set is empty.
 ```
 
 ### Queue
