@@ -41,32 +41,24 @@ PriorityQueue<Integer> q =  new PriorityQueue<Integer>(Collections.reverseOrder(
 
 ```java
 Deque<TreeNode> stack = new ArrayDeque<>();
-add(Element e) : The method inserts particular element at the end of the deque.
-addFirst(Element e) : The method inserts particular element at the start of the deque.
-addLast(Element e) : The method inserts particular element at the end of the deque. It is similiar to add() method
-clear() : The method removes all deque elements.
-size() : The method returns the no. of elements in deque.
-contains(Obj) : The method checks whether a deque contains the element or not
-Iterator() : The method returns an iterator over the deque.
-descendingIterator() : The method returns a reverse order iterator over the deque
-element() : The method returns element at the head of the deque
-getFirst(): The method returns first element of the deque
-getLast(): The method returns last element of the deque
-isEmpty(): The method checks whether the deque is empty or not.
-offer(Element e) : The method inserts element at the end of deque.
-offerFirst(Element e) : The method inserts element at the front of deque.
-offerLast(Element e) : The method inserts element at the end of deque.
-peek() : The method returns head element without removing it.
-peekFirst() : The method returns first element without removing it.
-peekLast() : The method returns last element without removing it.
-poll() : The method returns head element and also removes it
-pollFirst() : The method returns first element and also removes it
-pollLast() : The method returns last element and also removes it
-pop() : The method pops out an element for stack repesented by deque
-push(Element e) : The method pushes an element onto stack repesented by deque
-remove() : The method returns head element and also removes it
-removeFirst() : The method returns first element and also removes it
-removeLast() : The method returns last element and also removes it
+Stack<TreeNode> stack = new Stack();
+
+ArrayDeque
+add(Element e) 
+clear() 
+getFirst():
+getLast():
+isEmpty(): 
+pollFirst() :
+pollLast()
+peek() 
+peekFirst() 
+pollLast() 
+pop() 
+push(Element e)
+remove() 
+removeFirst()
+removeLast() 
 ```
 
 ### Comparator
@@ -98,6 +90,7 @@ Arrays.equals(str1, str2);
 int[] nums;
 int sum  = Arrays.stream(nums).sum();
 
+int[] snums = nums.clone();
 ```
 
 ### ArrayList
@@ -124,7 +117,22 @@ ArrayList<T> obj = new ArrayList<T>(Collections.nCopies(count,element));
 ### TreeMap
 
 ```java
-
+boolean containsKey(Object key): Returns true if this map contains a mapping for the specified key.
+boolean containsValue(Object value): Returns true if this map maps one or more keys to the specified value.
+Object firstKey(): Returns the first (lowest) key currently in this sorted map.
+Object get(Object key): Returns the value to which this map maps the specified key.
+Object lastKey(): Returns the last (highest) key currently in this sorted map.
+Object remove(Object key): Removes the mapping for this key from this TreeMap if present.
+void putAll(Map map): Copies all of the mappings from the specified map to this map.
+Set entrySet(): Returns a set view of the mappings contained in this map.
+int size(): Returns the number of key-value mappings in this map.
+Collection values(): Returns a collection view of the values contained in this map.
+Object clone(): The method returns a shallow copy of this TreeMap.
+void clear(): The method removes all mappings from this TreeMap and clears the map.
+SortedMap headMap(Object key_value): The method returns a view of the portion of the map strictly less than the parameter key_value.
+Set keySet(): The method returns a Set view of the keys contained in the treemap.
+Object put(Object key, Object value): The method is used to insert a mapping into a map
+SortedMap subMap((K startKey, K endKey): The method returns the portion of this map whose keys range from startKey, inclusive, to endKey, exclusive.
 ```
 
 ### TreeSet
