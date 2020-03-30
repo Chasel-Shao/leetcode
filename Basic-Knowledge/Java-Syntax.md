@@ -91,6 +91,10 @@ int[] nums;
 int sum  = Arrays.stream(nums).sum();
 
 int[] snums = nums.clone();
+
+## List => Array
+List<int[]> ans = new ArrayList();
+ans.toArray(new int[ans.size()][]);
 ```
 
 ### ArrayList
