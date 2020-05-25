@@ -17,6 +17,8 @@ Return the partitioning index, i.e the first index i nums[i] >= k.
 
 ## 代码
 
+### Approach #1 单指针索引交换
+
 ```java
 public class Solution {
     public int partitionArray(int[] nums, int k) {
@@ -38,7 +40,7 @@ public class Solution {
 }
 ```
 
-Solution 2:
+### Approach #2 双指针交换
 
 ```java
 public class Solution {

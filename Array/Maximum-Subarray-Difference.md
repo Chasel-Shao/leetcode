@@ -17,6 +17,8 @@ Return the largest difference.
 
 ## 代码
 
+### Approach #1 left_max, left_min, right_max, right_min
+
 ```java
 public class Solution {
     public int maxDiffSubArrays (int[] nums) {

@@ -15,6 +15,10 @@ Return the sum of the subarray.
 
 ## 代码
 
+### Apporach #1 
+
+`minSub = Math.min(minSub, sum - maxSum);`
+
 ```java
 public class Solution {
     public int minSubArray(ArrayList<Integer> nums) {
@@ -31,7 +35,7 @@ public class Solution {
 }
 ```
 
-Solution 2:
+### Approach #2 Multiply the array by negative 1, and then maximize it
 
 ```java
 public class Solution {

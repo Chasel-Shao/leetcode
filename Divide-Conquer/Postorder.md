@@ -14,7 +14,7 @@ Given a binary tree, return the postorder traversal of its nodes' values.
 
 ## 代码
 
-Approach 1: Recursive
+### Approach 1: Recursive
 
 ```java
 public class Solution {
@@ -59,11 +59,10 @@ public class Solution {
 
     return result;
   }
-
 }
 ```
 
-Approach 2:
+### Approach #2
 
 ```java
 public ArrayList<Integer> postorderTraversal(TreeNode root) {
@@ -73,8 +72,8 @@ public ArrayList<Integer> postorderTraversal(TreeNode root) {
   while (!stack.isEmpty()) {
     TreeNode node = stack.pop();
     result.add(0, node.val);
-    if (node.left != null) stack.push(node.left);
-    if (node.right != null) stack.push(node.right);
+    if (node.left != null) 		stack.push(node.left);
+    if (node.right != null) 	stack.push(node.right);
   }
     return result;
 }

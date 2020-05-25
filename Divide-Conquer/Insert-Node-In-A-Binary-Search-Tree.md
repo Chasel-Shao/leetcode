@@ -15,6 +15,8 @@ Given a binary search tree and a new tree node, insert the node into the tree. Y
 
 ## 代码
 
+### Approach #1 Recursion
+
 ```java
 public class Solution {
     public TreeNode insertNode(TreeNode root, TreeNode node) {
@@ -31,4 +33,16 @@ public class Solution {
 
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
 

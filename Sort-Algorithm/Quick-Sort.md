@@ -1,6 +1,6 @@
 # 代码
 
-Version 1:
+### Approach #1 Iterative
 
 ```java
 class Solution {
@@ -13,11 +13,9 @@ class Solution {
 
         int i = low, j = high;
         while (i <= j) {
-
             while (arr[i] < pivot) {
                 i++;
             }
-
             while (arr[j] > pivot) {
                 j--;
             }
@@ -43,7 +41,7 @@ class Solution {
 }
 ```
 
-Version 2:
+### Approach #2
 
 ```java
 class Solution {

@@ -17,6 +17,7 @@ Given an array with positive and negative integers. Re-range it to interleaving 
 public class Solution {
     public void rearrange(int arr[], int n) {
     int i = -1, temp = 0;
+      // 1. 先把负数放前
     for (int j = 0; j < n; j++) {
       if (arr[j] < 0) {
         i++;
@@ -27,7 +28,7 @@ public class Solution {
     }
 
     int pos = i + 1, neg = 0;
-
+		// 2. 把正数往前面负数群中交换
     while (pos < n && neg < pos && arr[neg] < 0) {
       temp = arr[neg];
       arr[neg] = arr[pos];

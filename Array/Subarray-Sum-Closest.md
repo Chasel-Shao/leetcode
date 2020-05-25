@@ -13,9 +13,11 @@ Given an integer array, find a subarray with sum closest to zero. Return the ind
 
 ## 代码
 
+### Approach #1 Two For loop
+
 ```java
 public class Solution {
-    class Pair {
+  class Pair {
     int first, second;
     public Pair(int first, int second) {
       this.first = first;
@@ -27,7 +29,7 @@ public class Solution {
     int start = 0, end = 0, min_sum = Integer.MAX_VALUE;
     for (int i = 0; i < n; i++) {
       int curr_sum = arr[i];
-      if (min_sum > Math.abs(curr_sum)) {
+      if (Math.abs(curr_sum) < min_sum) {
         min_sum = Math.abs(curr_sum);
         start = i;
         end = i;
@@ -50,11 +52,11 @@ public class Solution {
 }
 ```
 
-Solution 2:
+### Approach  #2  leftSum2 - leftSum1 = sum[1, 2]
 
 ```java
 public class Solution {
-    class Pair {
+  class Pair {
     int first, second;
     public Pair(){}
     public Pair(int first, int second) {
@@ -68,29 +70,29 @@ public class Solution {
     ArrayList<Pair> list = new ArrayList<Pair>();
     Pair p0 = new Pair(0, -1);
     for (int i = 1; i < n; i++) {
-            Pair pre = list.get(i - 1);
-            Pair p = new Pair();
-            p.first = pre.first + nums[i - 1];
-            p.second = i - 1;
-            list.add(p);
-        }
+      Pair pre = list.get(i - 1);
+      Pair p = new Pair();
+      p.first = pre.first + nums[i - 1];
+      p.second = i - 1;
+      list.add(p);
+    }
 
     list.sort(new Comparator<Pair>() {
-            public int compare(Pair p1, Pair p2) {
-                return p1.first - p2.first;
-            }
-        });
+      public int compare(Pair p1, Pair p2) {
+          return p1.first - p2.first;
+      }
+    });
 
-        for (int i = 1; i < n; i++) {
-            int diff = list.get(i).first - list.get(i - 1).first;
-            if (min_diff > diff) {
-                min_diff = diff;
-                start = list.get(i - 1).second;
-                end = list.get(i).second;
-            }
-        }
+    for (int i = 1; i < n; i++) {
+      int diff = list.get(i).first - list.get(i - 1).first;
+      if (min_diff > diff) {
+          min_diff = diff;
+          start = list.get(i - 1).second;
+          end = list.get(i).second;
+      }
+    }
 
-        return new Pair(start, end);
+    return new Pair(start, end);
   }
 
 }

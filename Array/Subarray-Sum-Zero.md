@@ -13,6 +13,8 @@ Given an integer array, find a subarray where the sum of numbers is zero. Your c
 
 ## 代码
 
+### Approach #1 HashMap, 查找两个sum
+
 ```java
 public class Solution {
   public ArrayList<Integer> subarraySum (int[] nums) {

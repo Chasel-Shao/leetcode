@@ -23,6 +23,9 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(1, new Comparator<In
     return y - x;
   }
 });
+
+PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>((a, b) -> (a.getValue() == b.getValue() ? a.getKey().compareTo(b.getKey()) : b.getValue() - a.getValue()));
+pq.addAll(curr.counts.entrySet());
 ```
 
 ### Min Heap
@@ -64,7 +67,16 @@ removeLast()
 ### Comparator
 
 ```java
+Arrays.sort(asStrs, new LargerNumberComparator());
 
+private class LargerNumberComparator implements Comparator<String> {
+    @Override
+    public int compare(String a, String b) {
+      String order1 = a + b;
+      String order2 = b + a;
+      return order2.compareTo(order1);
+    }
+  }
 ```
 
 ### Array
@@ -86,6 +98,7 @@ char[] str2 = t.toCharArray();
 Arrays.sort(str1);
 Arrays.sort(str2);
 Arrays.equals(str1, str2);
+Arrays.sort(words, (a, b) -> a.length() - b.length());
 
 int[] nums;
 int sum  = Arrays.stream(nums).sum();
@@ -95,6 +108,26 @@ int[] snums = nums.clone();
 ## List => Array
 List<int[]> ans = new ArrayList();
 ans.toArray(new int[ans.size()][]);
+
+## ToString
+String s = Arrays.deepToString(board).replaceAll("\\[|\\]|,|\\s", "");
+## Join ToString
+String.join(",", list);
+
+## Sort
+int[][] intervals
+Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+
+# Int to char[]
+int num = 33212;
+char[] A = Integer.toString(num).toCharArray();
+
+## Equal
+char[] str1 = s.toCharArray();
+char[] str2 = t.toCharArray();
+Arrays.sort(str1);
+Arrays.sort(str2);
+Arrays.equals(str1, str2);
 ```
 
 ### ArrayList
@@ -163,6 +196,10 @@ higher​(E e): This method returns the least element in this set strictly great
 lower​(E e): This method returns the greatest element in this set strictly less than the given element, or null if there is no such element.
 pollFirst​(): This method retrieves and removes the first (lowest) element, or returns null if this set is empty.
 pollLast​(): This method retrieves and removes the last (highest) element, or returns null if this set is empty.
+  
+  
+TreeSet<String> ans = new TreeSet<>();
+return new ArrayList<>(ans);
 ```
 
 ### Queue
@@ -187,8 +224,8 @@ import javafx.util.Pair;
 ### String
 
 ```java
-new StringBuffer(word).reverse().toString()
-  
+String reversed = new StringBuilder(combined).reverse().toString();
+
 # indexOf() / lastIndexOf()
 String str ="We are students";
 int size = str.indexOf("a");  // 变量size的值是3
@@ -225,6 +262,8 @@ public int lastIndexOf(int ch, int before)
 
 ```java
  int d = Character.getNumericValue('0') // 0
+ Character.isLetterOrDigit(s.charAt(l))
+ Character.toLowerCase(s.charAt(l)
 ```
 
 ### LinkedHashMap

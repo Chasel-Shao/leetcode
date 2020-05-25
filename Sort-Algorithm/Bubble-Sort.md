@@ -1,6 +1,28 @@
 # 代码
 
-Version 0:
+### Approach  #1
+
+```java
+class Solution {
+    public void bubbleSort(int[] a, int n) {
+        for (int i = 0; i < n; ++i) {
+            // Tranversing from left to right
+            for (int j = 0; j + i < n; ++j) {
+                // Ascending order
+                if (a[j] > a[j + 1]) {
+                    int temp;
+                    temp = a[j + 1];
+                    a[j + 1] = a[j];
+                    a[j] = temp;
+                }
+
+            }
+        }
+    }
+}
+```
+
+### Approach  #2
 
 ```java
 class BubbleSort 
@@ -21,29 +43,7 @@ class BubbleSort
 }
 ```
 
-Version 1:
-
-```java
-class Solution {
-    public void bubbleSort(int[] a, int n) {
-        for (int i = 0; i < n; ++i) {
-            // Tranversing from left to right
-            for (int j = 0; j + 1 < n; ++j) {
-                // Ascending order
-                if (a[j] > a[j + 1]) {
-                    int temp;
-                    temp = a[j + 1];
-                    a[j + 1] = a[j];
-                    a[j] = temp;
-                }
-
-            }
-        }
-    }
-}
-```
-
-Version 2:
+### Approach  #3
 
 ```java
 class Solution {

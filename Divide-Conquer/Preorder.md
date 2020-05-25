@@ -17,7 +17,7 @@ The number of nodes does not exceed 20.
 
 ## 代码
 
-Approach 1: No-Recursion
+### Approach #1 No-Recursion
 
 ```java
 public class Solution {
@@ -47,7 +47,7 @@ public class Solution {
 }
 ```
 
-Approach 2: Traverse
+### Approach #2 Traverse
 
 ```java
 class Solution {
@@ -67,7 +67,7 @@ class Solution {
 }
 ```
 
-Approach 3: Divide & Conquer
+### Approach #3 Divide & Conquer
 
 ```java
 class Solution {

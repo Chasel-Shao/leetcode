@@ -14,19 +14,19 @@ Given a binary tree, return the inorder traversal of its nodes' values.
 
 ## 代码
 
-Approach 1: No-Recursion
+### Approach 1: Stack + Two while-loop
 
 ```java
 public class Solution {
     public ArrayList<Integer> inorderTraversal(TreeNode root) {
     Stack<TreeNode> stack = new Stack<>();
     ArrayList<Integer> result = new ArrayList<>();
-
+		// 1.
     while (root != null) {
       stack.push(root);
       root = root.left;
     }
-
+ 		// 2.
     while (!stack.empty()) {
       TreeNode node = stack.peek();
       result.add(node.val);
@@ -52,7 +52,7 @@ public class Solution {
 }
 ```
 
-Approach 2:
+### Approach 2: Stack
 
 ```java
 class Solution {
