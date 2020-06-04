@@ -62,6 +62,10 @@ push(Element e)
 remove() 
 removeFirst()
 removeLast() 
+  
+## To String
+Stack<Character> ans = new Stack();
+String.valueOf(ans);
 ```
 
 ### Comparator
@@ -128,6 +132,15 @@ char[] str2 = t.toCharArray();
 Arrays.sort(str1);
 Arrays.sort(str2);
 Arrays.equals(str1, str2);
+
+## Binary Search
+Arrays.binarySearch(arr, key)
+Arrays.binarySearch(arr, fromIndex, toIndex, key)
+
+The array must be sorted (as by the Arrays.sort() method) prior to making this call. If it is not sorted, the results are undefined. If the array contains multiple elements with the specified value, there is no guarantee which one will be found.
+index of the search key, if it is contained in the array; otherwise, (-(insertion point) – 1).
+Arrays.binarysearch() vs Collections.binarysearch()
+Arrays.binarysearch() works for arrays which can be of primitive data type also. Collections.binarysearch() works for objects Collections like ArrayList and LinkedList.
 ```
 
 ### ArrayList
@@ -149,6 +162,18 @@ obj.add("o1");
 obj.add("o2");
 # 初始化方法 #4
 ArrayList<T> obj = new ArrayList<T>(Collections.nCopies(count,element));
+
+## Binary Search
+ List al = new ArrayList(); 
+al.add(100); 
+al.add(50); 
+al.add(30); 
+al.add(10); 
+al.add(2); 
+// The last parameter specifies the comparator method 
+index = Collections.binarySearch(al, 13); 
+// used for sorting. Searching an int key in a list sorted in descending order.
+int index = Collections.binarySearch(al, 50,  Collections.reverseOrder()); 
 ```
 
 ### TreeMap
@@ -200,12 +225,20 @@ pollLast​(): This method retrieves and removes the last (highest) element, or 
   
 TreeSet<String> ans = new TreeSet<>();
 return new ArrayList<>(ans);
+// convert to string array
+TreeSet<String> set = new TreeSet<>();
+set.toArray(new String[0]);
 ```
 
 ### Queue
 
 ```java
 Queue<Integer> toVisit = new ArrayDeque<>();
+
+Deque<int[]> queue = new LinkedList<>();
+queue.pollFirst()
+queue.offerLast()
+
 ```
 
 ### BitSet
