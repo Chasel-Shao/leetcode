@@ -284,11 +284,15 @@ String newstr = str.replace("a", "A");// newstr的值为Address
 # str.split(String sign);
 # str.split(String sign, in limit)；
 
-
+boolean startsWith(String str): It returns true if the String str is a prefix of the String.
+boolean startsWith(String str, index fromIndex)
+  
 public int indexOf(int char)
 public int indexOf(int char, int fromIndex)
 public int lastIndexOf(int ch)
 public int lastIndexOf(int ch, int before)
+  
+(n1 == n2) ? String.valueOf(n1) : String.format("%d->%d", n1, n2);
 ```
 
 ### Character
@@ -363,5 +367,13 @@ int    　　 size() //返回 set 中的元素数（其容量）。
 Object[]   toArray() //返回一个包含 set 中所有元素的数组。
 <T> T[]    toArray(T[] a) //返回一个包含此 set 中所有元素的数组；返回数组的运行时类型是指定数组的类型。
 
+String[] str = new String[] {"123"};
+HashSet<String> set = new HashSet<>(Arrays.asList(str));
+```
+
+### LinkedHashMap
+
+```java
+LinkedHashMap<Character, Integer> hashmap = new LinkedHashMap<Character, Integer>(k+1);
 ```
 
