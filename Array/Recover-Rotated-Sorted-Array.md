@@ -28,9 +28,11 @@ In-place, O(1) extra space and O(n) time.
 
 ## 代码
 
+### Approach #1 Rcursive Reverse
+
 ```java
 public class Solution {
-    public void recoverRotatedSortedArray(ArrayList<Integer> nums) {
+  public void recoverRotatedSortedArray(ArrayList<Integer> nums) {
     for (int index = 0; index < nums.length.size() - 1; index++) {
       if (nums.get(index) > nums.get(index + 1)) {
         reverse(nums, 0, index);
