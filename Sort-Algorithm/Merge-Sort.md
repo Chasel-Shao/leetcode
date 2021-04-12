@@ -48,7 +48,7 @@ public void merge(int[] a, int low, int mid, int high) {
 
 ```java
 class Solution {
-  public ArrayList<Integer> mergeSort(ArrayList<Integer> array){
+  public ArrayList<Integer> mergeSort(ArrayList<Integer> array) {
     int size = array.size();
     if (size < 2) {
       return array;

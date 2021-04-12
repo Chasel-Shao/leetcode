@@ -1,4 +1,4 @@
-## 547. Friend Circles
+## Friend Circles
 
 ----
 ## 题目地址

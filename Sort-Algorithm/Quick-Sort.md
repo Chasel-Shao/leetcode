@@ -44,10 +44,10 @@ class Solution {
 
 ```java
 class Solution {
-  public void quickSort(int[] arr, int low, int high) {
+  public void quickSort(int[] arr, int start, int end) {
     int partition = partition(arr, start, end);
 
-    if (partition - 1 > start) {
+    if (start < partition - 1) {
         quickSort(arr, start, partition - 1);
     }
 
@@ -60,18 +60,20 @@ class Solution {
     int pivot = arr[end];
     for (int i = start; i < end; i++) {
       if (arr[i] < pivot) {
-        int temp = arr[start];
-        arr[start] = arr[i];
-        arr[i] = temp;
+        swap(arr, start, i);
         start++;
       }
     }
 
-    int temp = arr[start];
-    arr[start] = pivot;
-    arr[end] = temp;
-
+		swap(arr, start, end);
+    
     return start;
+  }
+  
+  private void swap(int[] arr, i, j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
   }
 }
 ```

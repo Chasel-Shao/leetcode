@@ -1,4 +1,4 @@
-## 1027. Longest Arithmetic Sequence
+## Longest Arithmetic Sequence
 
 ----
 ## 题目地址
